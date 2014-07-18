@@ -12,34 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (pa_deb,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_deb.mk
-endif
-ifeq (pa_flo,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_flo.mk
-endif
-ifeq (pa_grouper,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_grouper.mk
-endif
-ifeq (pa_hammerhead,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_hammerhead.mk
-endif
 ifeq (pa_maguro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_maguro.mk
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_maguro.mk
 endif
 ifeq (pa_mako,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_mako.mk
-endif
-ifeq (pa_manta,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_manta.mk
-endif
-ifeq (pa_tilapia,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_tilapia.mk
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_mako.mk
 endif
 ifeq (pa_toro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_toro.mk
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_toro.mk
 endif
 ifeq (pa_toroplus,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_toroplus.mk
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_toroplus.mk
 endif
 

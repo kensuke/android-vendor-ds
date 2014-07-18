@@ -13,25 +13,26 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_deb,$(TARGET_PRODUCT))
+
+ifeq (pa_toro,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_deb
+OVERLAY_TARGET := ds_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
 # Include ParanoidAndroid common configuration
-include vendor/pa/main.mk
+include vendor/ds/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/asus/deb/full_deb.mk)
+$(call inherit-product, device/samsung/toro/full_toro.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_deb
+PRODUCT_NAME := pa_toro
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 7
-PRODUCT_MANUFACTURER := Asus
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razorg BUILD_FINGERPRINT="google/razorg/deb:4.4.3/KTU84L/1148727:user/release-keys" PRIVATE_BUILD_DESC="razorg-user 4.4.3 KTU84L 1148727 release-keys"
+PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.4.2/KOT49H/737497:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.4.2 KOT49H 737497 release-keys"
 
 endif

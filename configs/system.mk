@@ -17,33 +17,33 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/$(VENDOR)/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/$(VENDOR)/overlay/$(TARGET_PRODUCT)
 
 # Copy custom ramdisk
-PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/etc/init.$(VENDOR).rc:root/init.$(VENDOR).rc
+# PRODUCT_COPY_FILES += \
+#    vendor/$(VENDOR)/prebuilt/etc/init.$(VENDOR).rc:root/init.$(VENDOR).rc
 
 # init.d script support
-PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/bin/sysinit:system/bin/sysinit
+# PRODUCT_COPY_FILES += \
+#    vendor/$(VENDOR)/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
-PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+# PRODUCT_COPY_FILES += \
+#    vendor/$(VENDOR)/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # APN
 PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Gapps backup script
-PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR)/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/$(VENDOR)/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/$(VENDOR)/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+# PRODUCT_COPY_FILES += \
+#    vendor/$(VENDOR)/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+#    vendor/$(VENDOR)/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+#    vendor/$(VENDOR)/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
 # SU Support
-SUPERUSER_EMBEDDED := true
+# SUPERUSER_EMBEDDED := true
 
-PRODUCT_PACKAGES := \
-    Superuser \
-    su
+# PRODUCT_PACKAGES := \
+#    Superuser \
+#    su
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
+# PRODUCT_PROPERTY_OVERRIDES += \
+#    persist.sys.root_access=3

@@ -14,25 +14,25 @@
 
 # Check for target product
 
-ifeq (pa_maguro,$(TARGET_PRODUCT))
+ifeq (pa_mako,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xhdpi
+OVERLAY_TARGET := ds_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
 # Include ParanoidAndroid common configuration
-include vendor/pa/main.mk
+include vendor/ds/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/samsung/maguro/full_maguro.mk)
+$(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_maguro
+PRODUCT_NAME := pa_mako
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Galaxy Nexus
-PRODUCT_MANUFACTURER := Samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.4.2/KOT49H/737497:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.4.2 KOT49H 737497 release-keys"
+PRODUCT_MODEL := Nexus 4
+PRODUCT_MANUFACTURER := LGE
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.4.4/KTU84P/1227136:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.4.4 KTU84P 1227136 release-keys"
 
 endif
