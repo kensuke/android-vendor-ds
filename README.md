@@ -47,5 +47,5 @@ $ lunch ds_maguro-userdebug
 ```
 
 ## Remember!##
-# This ROM is not a project. This is a ROM originally by @manumanfred (XDA: Carlos_Manuel) and now this ROM is more open sourced and does not have anymore only one person developing this ROM.
+## This ROM is not a project. This is a ROM originally by @manumanfred (XDA: Carlos_Manuel) and now this ROM is more open sourced and does not have anymore only one person developing this ROM. ##
 
