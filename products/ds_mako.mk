@@ -29,7 +29,7 @@ include vendor/ds/main.mk
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_mako
+PRODUCT_NAME := ds_mako
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
