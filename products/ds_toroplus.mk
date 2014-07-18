@@ -14,7 +14,7 @@
 
 # Check for target product
 
-ifeq (pa_toroplus,$(TARGET_PRODUCT))
+ifeq (ds_toroplus,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := ds_xhdpi
@@ -29,7 +29,7 @@ include vendor/ds/main.mk
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_toroplus
+PRODUCT_NAME := ds_toroplus
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
