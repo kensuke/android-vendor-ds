@@ -14,7 +14,7 @@
 
 # Check for target product
 
-ifeq (pa_maguro,$(TARGET_PRODUCT))
+ifeq (ds_maguro,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := ds_xhdpi
