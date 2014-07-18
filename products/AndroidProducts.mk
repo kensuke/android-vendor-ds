@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (pa_maguro,$(TARGET_PRODUCT))
+ifeq (ds_maguro,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_maguro.mk
 endif
-ifeq (pa_mako,$(TARGET_PRODUCT))
+ifeq (ds_mako,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_mako.mk
 endif
-ifeq (pa_toro,$(TARGET_PRODUCT))
+ifeq (ds_toro,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_toro.mk
 endif
-ifeq (pa_toroplus,$(TARGET_PRODUCT))
+ifeq (ds_toroplus,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/ds_toroplus.mk
 endif
 
