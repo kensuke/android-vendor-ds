@@ -4,7 +4,7 @@
 If you use this ROM on your phone and you are using other language than English, and there's not everyhting translated into your langauge then you can help us by making pull requests or sending us message with the translations...
 
 
-## Gettings started ##
+## Getting started ##
 # Follow the instructions from:
 http://source.android.com/source/developing.html
 
