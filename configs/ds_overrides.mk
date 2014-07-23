@@ -13,4 +13,6 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-# don't build nothing for now.
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
