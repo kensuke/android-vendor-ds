@@ -16,3 +16,6 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
+
+PRODUCT_PACKAGES += \
+    Busybox
