@@ -12,10 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# CM DSP Manager
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
 
+# Mira4U by Kensuke
+PRODUCT_PACKAGES += \
+    Mira4U
+
+# Put here external repos
 PRODUCT_PACKAGES += \
     Busybox
